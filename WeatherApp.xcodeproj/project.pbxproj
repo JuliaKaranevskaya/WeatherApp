@@ -66,9 +66,9 @@
 			children = (
 				C1EFBEE326DE61510070D4DE /* AppDelegate.swift */,
 				C1EFBEE526DE61510070D4DE /* SceneDelegate.swift */,
+				C1EFBEF926DED5CF0070D4DE /* Constants.swift */,
 				C1EFBEE726DE61510070D4DE /* WeatherViewController.swift */,
 				C1EFBEF726DED46A0070D4DE /* NetworkWeatherManager.swift */,
-				C1EFBEF926DED5CF0070D4DE /* Constants.swift */,
 				C1EFBEFB26DF790A0070D4DE /* CurrentWeatherData.swift */,
 				C1EFBEFD26DF8F270070D4DE /* CurrentWeather.swift */,
 				C1EFBEE926DE61510070D4DE /* Main.storyboard */,

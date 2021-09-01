@@ -22,6 +22,22 @@ struct CurrentWeather {
     }
     
     let weatherPicture: Int
+    var weatherPictureString: String {
+        switch weatherPicture {
+        case 200...232:
+            return "cloud"
+        case 300...321:
+            return "cloud.fill"
+        case 500...531:
+            return "sun.min"
+        case 200...232:
+            return "cloud.sun"
+        case 200...232:
+            return "cloud.sun.bolt"
+        default:
+            return "sun.haze.fill"
+        }
+    }
     
     init?(currentWeatherData: CurrentWeatherData) {
         cityName = currentWeatherData.name

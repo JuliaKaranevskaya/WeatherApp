@@ -58,6 +58,9 @@ class WeatherViewController: UIViewController {
         super.viewDidLoad()
         addSubviews()
         setUpUI()
+        networkWeatherManager.handler = { currentWeather in
+            self.updateUIWith(weather: currentWeather)
+        }
     }
     
     private func presentAlertController(completionHandler: @escaping (String) -> Void) {
@@ -69,8 +72,6 @@ class WeatherViewController: UIViewController {
             let textField = alert.textFields?.first
             guard let cityName = textField?.text else { return }
             if cityName != "" {
-//                self.networkWeatherManager.fetchCurrentWeather(forCity: cityName)
-//                self.cityLabel.text = cityName
                 let city = cityName.split(separator: " ").joined(separator: "%20")
                 completionHandler(city)
             }
@@ -79,11 +80,20 @@ class WeatherViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    private func updateUIWith(weather: CurrentWeather) {
+        DispatchQueue.main.async {
+            self.cityLabel.text = weather.cityName
+            self.temperatureLabel.text = weather.tempString
+            self.feelsLikeTemperatureLabel.text = weather.feelsLikeTempString
+            self.weatherImageView.image = UIImage(systemName: weather.weatherPictureString)
+        }
+        
+    }
+    
     @objc private func searchCityPressed() {
         presentAlertController { city in
             self.networkWeatherManager.fetchCurrentWeather(forCity: city)
         }
-
     }
     
     private func addSubviews() {
