@@ -15,6 +15,7 @@
 		C1EFBEF026DE61560070D4DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EFBEEE26DE61560070D4DE /* LaunchScreen.storyboard */; };
 		C1EFBEF826DED46A0070D4DE /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EFBEF726DED46A0070D4DE /* NetworkWeatherManager.swift */; };
 		C1EFBEFA26DED5CF0070D4DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EFBEF926DED5CF0070D4DE /* Constants.swift */; };
+		C1EFBEFC26DF790A0070D4DE /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EFBEFB26DF790A0070D4DE /* CurrentWeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C1EFBEF126DE61560070D4DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EFBEF726DED46A0070D4DE /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		C1EFBEF926DED5CF0070D4DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C1EFBEFB26DF790A0070D4DE /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C1EFBEE726DE61510070D4DE /* WeatherViewController.swift */,
 				C1EFBEF726DED46A0070D4DE /* NetworkWeatherManager.swift */,
 				C1EFBEF926DED5CF0070D4DE /* Constants.swift */,
+				C1EFBEFB26DF790A0070D4DE /* CurrentWeatherData.swift */,
 				C1EFBEE926DE61510070D4DE /* Main.storyboard */,
 				C1EFBEEC26DE61560070D4DE /* Assets.xcassets */,
 				C1EFBEEE26DE61560070D4DE /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				C1EFBEFA26DED5CF0070D4DE /* Constants.swift in Sources */,
 				C1EFBEE826DE61510070D4DE /* WeatherViewController.swift in Sources */,
+				C1EFBEFC26DF790A0070D4DE /* CurrentWeatherData.swift in Sources */,
 				C1EFBEE426DE61510070D4DE /* AppDelegate.swift in Sources */,
 				C1EFBEE626DE61510070D4DE /* SceneDelegate.swift in Sources */,
 				C1EFBEF826DED46A0070D4DE /* NetworkWeatherManager.swift in Sources */,
